@@ -110,6 +110,7 @@ img{
 .section__description--wrapper {
   width: 60%;
   padding: 0 24px;
+  font-size: 20px;
 }
 
 .section__description--para{
