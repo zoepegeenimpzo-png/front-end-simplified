@@ -4,11 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <section>
     <nav>
-      <img src="images/FES.svg" alt="FES Logo">
+      <img src="images/FES.svg"class="logo" alt="FES Logo">
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#discord">Discord</a></li>
@@ -16,63 +17,74 @@
       </ul>
     </nav>
     <header>
+      <div class="row">
       <div> 
         <h1>Best place to learn front end </h1>
-        <p> Go from absolute beginner to pro with a simplified process</p>
+        <p class="subheader"> Go from absolute beginner to pro with a simplified process</p>
         <button> Start now</button>
       </div>
       <figure> 
         <img src="images/laptop.png" alt="Computer">
       </figure>
+      </div>
     </header>
   </section>
   <main>
     <section id="about">
       <h2>About</h2>
+      <div class="row"
+      <div class="section__description">
+         <div class="section__description--wrapper"></div>
       <div>
-        <p>lore ipsum dolor sit amet</p>
-      <p>lore ipsum dolor sit amet</p>
+        <p class="section__description--para">
+          lore ipsum dolor sit amet</p>
+      <p class="section__description--para">lore ipsum dolor sit amet</p>
       </div>
-      <figure>
+      <figure class="about__image--wrapper">
         <img src="images/about.png" alt="About">
       </figure>
+      </div>
+      </div>
       </section>
-      
+
     <section id="discord">
       <h2>Discord</h2>
-      <figure>
+      <div class="row">
+      <div class="section__description">
+      <figure class="about__image--wrapper">
         <img src="images/discord.png" alt="Discord">
       </figure>
       <div>
-        <p>lorem ipsum dolor sit amet</p>
-        <p>lorem ipsum dolor sit amet</p>
-
+        <p class="section__description--wrapper">lorem ipsum dolor sit amet</p>
+        <p class="section__description--para">lorem ipsum dolor sit amet</p>
+</div>  
       </div>
+    </div>  
     </section>
 
     <section id="contact">
       <h2>Contact</h2>
       <form action=""
       <label>Email</label>
-      <input type="text"
+      <input type="email"
       placeholder="jane@example.com">
 
       <form action=""
       <label>Message</label>
       <input type="text" 
       placeholder="Write your message here">
+      <button>Contact Us</button>
     </form>
-    <button>Submit</button>
     </section>
   </main>
 
   <footer>
-    <img src="images/FES.svg" alt="FES Logo">
-    <div> 
-      <a href="#about">About</a>
-      <a href="#discord">Discord</a>
-      <a href="#contact">Contact</a>
-      <a href="#courses">Courses</a>
+    <img class= "footer__logo" src="images/FES.svg" alt="FES Logo">
+    <div class="footer__links"> 
+      <a class="footer__link" href="#about">About</a>
+      <a class="footer__link" href="#discord">Discord</a>
+      <a class="footer__link" href="#contact">Contact</a>
+      <a class="footer__link" href="#courses">Courses</a>
     </div>
     <p>Copyright Frontend Simplified</p>
   </footer>
